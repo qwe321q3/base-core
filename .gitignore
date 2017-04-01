@@ -1,0 +1,16 @@
+/.idea
+/*.iml
+/.gitignore
+/base-core-common/target
+/base-core-dal/base-core-dal.iml
+/base-core-dal/target
+/base-core-manager/target
+/base-core-manager/base-core-manager.iml
+/base-core-service/target
+/base-core-service/base-core-service.iml
+/base-core-service-api/base-core-service-api.iml
+/base-core-service-api/target
+/base-core-web/base-core-web.iml
+/base-core.iml
+/base-core-web/target
+/base-core-common/base-core-common.iml
