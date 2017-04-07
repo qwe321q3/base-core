@@ -1,11 +1,14 @@
-
+/**
+ * www.tydic.com Inc.
+ * Copyright (c) 2010-2016 All Rights Reserved.
+ */
 package com.tydic.base.core.service.api.response;
-
-import java.io.Serializable;
 
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+
+import java.io.Serializable;
 
 /**
  * @author tianshuo

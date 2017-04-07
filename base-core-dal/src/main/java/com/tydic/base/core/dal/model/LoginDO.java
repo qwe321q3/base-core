@@ -15,6 +15,7 @@ import lombok.ToString;
 @ToString(callSuper = true)
 public class LoginDO extends BaseDO {
 
+
     /**
      * 用户账号
      */
@@ -24,6 +25,11 @@ public class LoginDO extends BaseDO {
      * 登陆密码
      */
     private String userPass;
+
+    /**
+     * 用户名称
+     */
+    private String userName;
 
     /**
      * 状态

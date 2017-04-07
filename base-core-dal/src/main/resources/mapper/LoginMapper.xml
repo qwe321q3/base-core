@@ -6,6 +6,7 @@
         <id column="ID" property="id" jdbcType="BIGINT"/>
         <result column="USER_ACCOUNT" property="userAccount" jdbcType="VARCHAR"/>
         <result column="USER_PASS" property="userPass" jdbcType="VARCHAR"/>
+        <result column="USER_PASS" property="userName" jdbcType="VARCHAR"/>
         <result column="USER_STATUS" property="userStatus" jdbcType="VARCHAR"/>
         <result column="CREATED_BY" property="createdBy" jdbcType="VARCHAR"/>
         <result column="CREATED_AT" property="createdAt" jdbcType="TIMESTAMP"/>
@@ -18,6 +19,7 @@
         ID,
         USER_ACCOUNT,
         USER_PASS,
+        USER_NAME
         USER_STATUS,
         CREATED_BY,
         CREATED_AT,
@@ -28,10 +30,22 @@
 
     <!--根据用户帐号和密码查询用户信息-->
     <select id="queryByAccountAndPass" parameterType="com.tydic.base.core.dal.model.LoginDO" resultMap="BaseResultMap">
-      select
-      <include refid="Base_Column_List" />
-      from t_user_info
-      where USER_ACCOUNT = #{userAccount} and USER_PASS = #{userPass}
+        select
+        <include refid="Base_Column_List" />
+        from t_user_info
+        where USER_ACCOUNT = #{userAccount} and USER_PASS = #{userPass}
+    </select>
+
+    <!--根据用户帐号和密码查询用户信息-->
+    <select id="queryUserGroup" parameterType="com.tydic.base.core.dal.model.LoginDO" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from t_user_info
+        where 1=1
+        <if test="userName != null and userName != '' ">
+            AND USER_NAME like CONCAT('%','${userName}','%')
+        </if>
+        ORDER BY UPDATED_AT DESC
     </select>
 
 </mapper>

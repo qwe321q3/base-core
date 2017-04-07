@@ -3,6 +3,8 @@ package com.tydic.base.core.service.api.facade;
 
 import com.tydic.base.core.service.api.base.Result;
 import com.tydic.base.core.service.api.request.LoginReqDto;
+import com.tydic.base.core.service.api.request.UserReqDto;
+import com.tydic.base.core.service.api.base.PageBeanResDto;
 import com.tydic.base.core.service.api.response.UserResDto;
 
 /**
@@ -17,4 +19,14 @@ public interface LoginService {
      * @return UserResDto 返回用户信息
      */
     Result<UserResDto> login(LoginReqDto loginReqDto);
+
+
+    /**
+     * 分页查询接口
+     * @param userReqDto 用户查询条件
+     * @return
+     */
+    Result<PageBeanResDto> queryUserByPage(UserReqDto userReqDto);
+
+
 }
