@@ -1,12 +1,8 @@
-/**
- * www.tydic.com Inc.
- * Copyright (c) 2010-2016 All Rights Reserved.
- */
+
 package com.tydic.base.core.manager.impl;
 
 import com.tydic.base.core.dal.mapper.LoginMapper;
 import com.tydic.base.core.dal.model.LoginDO;
-import com.tydic.base.core.manager.LoginManager;
 import com.tydic.base.core.manager.convert.LoginDtoConvert;
 import com.tydic.base.core.service.api.base.Result;
 import com.tydic.base.core.service.api.request.LoginReqDto;
@@ -20,7 +16,7 @@ import javax.annotation.Resource;
  * @version Id: LoginManagerImpl.java, v 0.1 2016/7/28 0028 16:39 tianshuo Exp $$
  */
 @Service
-public class LoginManagerImpl implements LoginManager{
+public class LoginManagerImpl{
 
     @Resource
     private LoginMapper loginMapper;

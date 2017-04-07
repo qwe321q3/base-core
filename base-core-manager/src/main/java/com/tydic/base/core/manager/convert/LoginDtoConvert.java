@@ -1,7 +1,4 @@
-/**
- * www.tydic.com Inc.
- * Copyright (c) 2010-2016 All Rights Reserved.
- */
+
 package com.tydic.base.core.manager.convert;
 
 import com.tydic.base.core.dal.model.LoginDO;

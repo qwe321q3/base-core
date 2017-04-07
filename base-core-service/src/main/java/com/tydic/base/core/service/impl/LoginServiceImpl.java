@@ -1,10 +1,7 @@
-/**
- * www.tydic.com Inc.
- * Copyright (c) 2010-2016 All Rights Reserved.
- */
+
 package com.tydic.base.core.service.impl;
 
-import com.tydic.base.core.manager.LoginManager;
+import com.tydic.base.core.manager.impl.LoginManagerImpl;
 import com.tydic.base.core.service.api.base.Result;
 import com.tydic.base.core.service.api.facade.LoginService;
 import com.tydic.base.core.service.api.request.LoginReqDto;
@@ -22,7 +19,7 @@ import javax.annotation.Resource;
 public class LoginServiceImpl implements LoginService{
 
     @Resource
-    private LoginManager loginManager;
+    private LoginManagerImpl loginManager;
 
     /**
      * 登录接口
