@@ -40,7 +40,7 @@
         <redis.version>2.6.0</redis.version>
         <fastjson.version>1.2.28</fastjson.version>
         <commons-lang3.version>3.1</commons-lang3.version>
-        <junit.version>4.11</junit.version>
+        <junit.version>4.13.1</junit.version>
         <el.api.version>2.2</el.api.version>
         <el.version>3.0.0</el.version>
         <javax.mail.version>1.4.1</javax.mail.version>
